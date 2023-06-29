@@ -1,0 +1,52 @@
+footer {
+	width: 100%;
+	padding: 50px 0px;
+	background: #555;
+
+	> .inner {
+		width: 1200px;
+		margin: 0px auto;
+
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		h1 {
+			font: bold 20px/1 'arial';
+			color: #888;
+			float: left;
+		}
+		p {
+			font: 12px/1 'arial';
+			color: #999;
+			float: right;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	footer {
+		padding: 50px 30px;
+
+		> .inner {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	footer {
+		> .inner {
+			h1 {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			p {
+				float: left;
+			}
+		}
+	}
+}
