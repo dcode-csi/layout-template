@@ -57,6 +57,29 @@ header {
 	}
 }
 
+header.main {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+
+	> .inner {
+		h1 {
+			a {
+				color: #fff;
+			}
+		}
+
+		#gnb {
+			li {
+				a {
+					color: #eee;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: $tablet) {
 	header {
 		padding: 0px 30px;
