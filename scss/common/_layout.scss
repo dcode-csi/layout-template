@@ -28,3 +28,13 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	.content {
+		> .inner {
+			width: 100%;
+			margin: 70px auto;
+			padding: 0px 30px;
+		}
+	}
+}
